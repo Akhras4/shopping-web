@@ -1,0 +1,170 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+  --img :url('man1.jpg'); 
+  --img1:url('woman1.jpg');
+  --img2:url('child1.jpg');
+  --img3:url('woman2.jpg');
+  --img4:url('MAN.jpg');
+}
+.body{
+ min-width: 100%;
+ min-height: 100%;
+ border: 2px solid black;   
+}
+#container{
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-position: center;
+    height:100vh;
+}
+#head{
+    display: flex;
+    font-size: 32px;
+    color: black;
+    flex: 33px;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 16px;
+    flex-grow: 4;
+}
+.leftSideContainer{
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 80px 80px 80px;
+    gap:10px;
+    font-size: 1rem;
+}
+.hyf-container{
+    display: grid;
+    gap: 10px;
+    text-align: center;
+    grid-template-areas: 
+            "logo logo logo"
+            "man woman child";
+    grid-template-columns: repeat(3,100px) !important;
+    grid-template-rows: repeat(2,1fr);
+}        
+.logo{
+    grid-area: logo;
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.Search{
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+a{
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1000px){
+    .leftSideContainer{
+        grid-template-areas: 
+          "LOGIN HELP SHOPPINGBAG"
+          "Searchcontine a b ";
+        grid-template-columns: repeat(3,60px);
+        grid-template-rows: repeat(2,60px);
+        gap:10px;
+    }
+    .Searchcontiner{
+        grid-area:Searchcontine;
+    }
+    .Search{
+        font-size: 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 160px;
+    }
+  }
+  @media only screen and (max-width: 682px){
+    .leftSideContainer{
+      display: inline;
+    }
+    .bagcontant{
+        display: none ;
+    }
+    .LOGIN{
+        display: none;
+    }
+    .HELP{
+        display: none;
+    }
+    .Searchcontiner{
+        position: fixed;
+        bottom: 0;
+        right: 15px;
+        left: 15px;
+        max-width: 100%;
+        
+    }
+    .Search{
+        font-size: 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 100%;
+    }
+  } 
+  .button{
+    cursor: pointer;
+  }
+  .bar1 {
+    width: 35px !important;
+    height: 5px !important;
+    background-color: #000000;
+    margin: 3px 0;
+    transition: 0.4s;
+    
+  }
+  .bar2{
+    width: 35px !important;
+    height: 5px !important;
+    background-color: #030303;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .change .bar1 {
+    transform: translate(0, 6px) rotate(-45deg);
+  }
+  .change .bar2 {
+    transform: translate(0, -6px) rotate(45deg);
+  }
+  .buttoncontent {
+    display: grid;
+    gap: 10px;
+    text-align: center;
+    grid-template-areas: 
+            "logo logo logo"
+            "man woman child"
+            "cell cell cell";
+    grid-template-columns: repeat(3,1fr) !important;
+    grid-template-rows: repeat(6,1fr);
+    background-color:rgba(199, 199, 199, 0.466);
+    border:2px solid  ;
+    border-radius: 10px;
+    justify-content:space-around;
+    align-items: center;
+  }
+  li{
+    visibility: hidden;
+  }
+  .buttoncontent li{
+    visibility: visible;
+    list-style: none;
+    font-size: 16px;
+  }
+  .buttoncontent .cell  {
+    color:#000000;
+    border: 2px solid black; 
+}
+
+    
+    
+
