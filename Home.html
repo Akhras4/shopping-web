@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="discription" content="Discover the new HACKYOURFUTHER collection online. The latest trends for Woman, Man, Kids and next season’s ad campaigns.">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackYourFuture</title>
+</head>
+<body>
+    <!-- contains everything in this div -->
+    <div id="container",style=" background-image:var(--img)">
+        <!-- contains the head of the page that contains 3 container (button,hyf-container,leftSideContainer) -->
+        <header id="head">
+            <!-- button on the side when on click will change hyf-container to show off menu for  Woman, Man, Kids collection -->
+         <div id="button"class="button" onclick="myFunction(this),functionmenuMAN()" >
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+        </div> 
+       <!-- hyf-container contains the logo and :: before links for other pages and hidden cell:: after having Woman, Man, Kids list of collection of product -->
+          <div id="hyf-container" class=hyf-container>
+           <div id="logo"class="logo">HackYourFuture</div>
+           <div class="manmenu" ><a id="link" href="Man.html">Man</a></div>     
+           <div class="womanmenu"><a id="link1" href="Man.html">Woman</a></div>
+           <div class="kidsmenu"><a id="link2" href="Man.html" > Kids</a></div>
+            <li id="cell" class="cell"></li> 
+            <li id="cell1" class="cell"></li> 
+            <li id="cell2" class="cell"></li>
+            <li id="cell3" class="cell"></li> 
+            <li id="cell4" class="cell"></li> 
+            <li id="cell5" class="cell"></li> 
+          </div>
+          <div class="leftSideContainer">
+           <div class="Searchcontiner"> <input class="Search" type="text" placeholder="Search.."></div>
+           <div class="LOGIN"><a href="login.html">LOG IN</a></div>
+           <div class="HELP"><a>HELP</a></div>
+           <div class="SHOPPINGBAG"><a><span class="bagcontant">SHOPPING BAG</span><i class="fa fa-shopping-basket" style="font-size:24px"></i></a></div>
+          </div>
+         </div>  
+        </header>
+    </div>
+    <script src="HOME.js"></script>
+    
+</body>
+</html>
